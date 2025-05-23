@@ -32,5 +32,3 @@ sleep 5;
 _logStr = format ["Ars: %1, added items %2; Group %3", _group + "_ars", _myDonate, _group];
 diag_log _logStr;
 [(missionNamespace getVariable (_group + "_ars")), _myDonate, false] call ace_arsenal_fnc_addVirtualItems;
-
-///ffff
