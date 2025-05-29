@@ -15,7 +15,7 @@ _arsArray = [
 	obrmp155_ars,
 	somali_60omb_ars,
 	dshp104_ars,
-	oshbr3_ars,
+	opr6_ars,
 	pdp51_ars
 ];
 

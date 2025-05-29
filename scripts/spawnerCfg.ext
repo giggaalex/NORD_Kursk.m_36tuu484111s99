@@ -511,13 +511,13 @@ class odshbr82_spawner_class //82 одшбр
     };
 };
 
-class oshbr3_spawner_class //3 ОШБр ( пусто ) 
+class opr6_spawner_class //6 ОПР ( пусто ) 
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == oshbr3_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == opr6_spawner)"; // "(playerSide in [west,independent])"
     
-    class oshbr3_spawner_class
+    class opr6_spawner_class
 	{
-        displayName = "Запрос техники 3 ОШБр";
+        displayName = "Запрос техники 6 ОПР";
         vehicles[] =
         {
         {"nord_FA_UAF_BTR4",1,"true"},
@@ -530,7 +530,7 @@ class oshbr3_spawner_class //3 ОШБр ( пусто )
         };
         spawnPoints[] =
         {
-            {"1",{"oshbr3_spawnplace"}}
+            {"1",{"opr6_spawnplace"}}
         };
         
     };
