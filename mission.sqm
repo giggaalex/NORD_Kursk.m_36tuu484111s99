@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=149098;
+		nextID=150194;
 	};
 	class Camera
 	{
-		pos[]={8975.2617,196.4642,906.7536};
-		dir[]={0.76527566,-0.47073591,-0.4392052};
-		up[]={0.40834847,0.88221622,-0.23435916};
-		aside[]={-0.49779251,2.2759195e-07,-0.86736035};
+		pos[]={9041.4951,143.76826,857.38501};
+		dir[]={-0.5311138,-0.18952271,0.82583827};
+		up[]={-0.10251711,0.98187494,0.1594056};
+		aside[]={0.84108281,-6.5774657e-08,0.54091704};
 	};
 };
 binarizationWanted=0;
@@ -335,7 +335,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -361,7 +361,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -374,7 +374,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -387,7 +387,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -36546,11 +36546,12 @@ class Mission
 					dataType="Comment";
 					class PositionInfo
 					{
-						position[]={9057.2119,136.36185,837.02423};
+						position[]={9057.2119,136.362,837.02399};
 						angles[]={6.2316666,6.0302892,0.018020403};
 					};
-					title="60 ОМБ Сомали";
+					title="ПУСТО";
 					id=99727;
+					atlOffset=0.00016784668;
 				};
 				class Item30
 				{
@@ -37107,11 +37108,12 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={312.09238,127.9789,9644.3086};
+				position[]={312.09201,127.979,9644.3086};
 				angles[]={0.0035881216,2.730581,0.026622191};
 			};
-			title="73 МЦСО";
+			title="73 МЦСпО";
 			id=99842;
+			atlOffset=0.00010681152;
 		};
 		class Item9
 		{
@@ -37733,8 +37735,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={314.12933,129.08452,9641.9229};
-						angles[]={0.026856519,4.6522961,6.26653};
+						position[]={314.129,129.0845,9641.9229};
+						angles[]={0.026860617,4.6522975,6.2665348};
 					};
 					side="Empty";
 					flags=5;
@@ -37929,8 +37931,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={335.28818,130.01891,9610.5381};
-						angles[]={0.0080256928,1.5074483,6.2465229};
+						position[]={335.28799,130.01889,9610.5381};
+						angles[]={0.0080285147,1.5074409,6.2465158};
 					};
 					side="Empty";
 					flags=5;
@@ -38242,8 +38244,8 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={343.92368,128.99754,9619.7295};
-				angles[]={0.0017605233,2.7310371,0};
+				position[]={331.35782,128.85876,9619.7305};
+				angles[]={6.2746859,2.7310371,0.021261672};
 			};
 			title="95 ОДШБР";
 			id=166607;
