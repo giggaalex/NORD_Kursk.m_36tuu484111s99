@@ -13,7 +13,7 @@ _arsArray = [
 	obrspn24_ars,
 	obrmp810_ars,
 	obrmp155_ars,
-	somali_60omb_ars,
+	aid_axmat_ars,
 	dshp104_ars,
 	opr6_ars,
 	pdp51_ars

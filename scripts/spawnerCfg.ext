@@ -254,13 +254,13 @@ class obrmp155_spawner_class // 155 ОБРМП
     };
 };
 
-class somali_60omb_spawner_class //60 ОМБ Сомали ( пусто ) 
+class aid_axmat_spawner_class //аид ахмат
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == somali_60omb_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == aid_axmat_spawner)"; // "(playerSide in [west,independent])"
     
-    class somali_60omb_spawner_class
+    class aid_axmat_spawner_class
 	{
-        displayName = "Запрос техники 60 ОМБ Сомали";
+        displayName = "Запрос техники аид ахмат";
         vehicles[] =
         {    
 			{"RUS_MSV_South_t72b3m",1,"true"}, 
@@ -273,7 +273,7 @@ class somali_60omb_spawner_class //60 ОМБ Сомали ( пусто )
 		};
         spawnPoints[] =
         {
-            {"1",{"somali_60omb_spawnplace"}}
+            {"1",{"aid_axmat_spawnplace"}}
         };
         
     };
