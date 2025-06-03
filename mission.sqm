@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=283343;
+		nextID=283347;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=153482;
+		nextID=154578;
 	};
 	class Camera
 	{
-		pos[]={9052.2891,141.29453,843.69659};
-		dir[]={0.25853544,-0.60553867,-0.75265735};
-		up[]={0.1967206,0.79581171,-0.572698};
-		aside[]={-0.94576675,1.0838266e-07,-0.32486954};
+		pos[]={786.4032,348.95511,9445.8594};
+		dir[]={0.44642004,-0.3628276,-0.81796575};
+		up[]={0.17381805,0.9318561,-0.31848332};
+		aside[]={-0.87778139,-1.0477379e-08,-0.47906518};
 	};
 };
 binarizationWanted=0;
@@ -67,13 +67,15 @@ addons[]=
 	"CUP_Misc_e_Config",
 	"rhs_main",
 	"A3_Structures_F_Walls",
-	"afou_flags"
+	"afou_flags",
+	"tbd_mt12",
+	"RUS_VDV_east_AirborneTroops"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=34;
 		class Item0
 		{
 			className="A3_Props_F_Enoch";
@@ -280,13 +282,26 @@ class AddonsMetaData
 			author="Barman75, Brezerk";
 			url="https://bit.ly/ArmaUA";
 		};
+		class Item32
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item33
+		{
+			className="RUS_VDV_east_AirborneTroops";
+			name="RUS_VDV_east_AirborneTroops";
+		};
 	};
 };
 dlcs[]=
 {
 	"Enoch",
 	"Heli",
-	"TERRACORE"
+	"TERRACORE",
+	"RHS_AFRF"
 };
 randomSeed=16570441;
 class ScenarioData
@@ -335,7 +350,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -387,7 +402,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -29965,7 +29980,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=369;
+		items=371;
 		class Item0
 		{
 			dataType="Layer";
@@ -30320,618 +30335,8 @@ class Mission
 									name="Base VSU_1";
 									class Entities
 									{
-										items=6;
+										items=5;
 										class Item0
-										{
-											dataType="Group";
-											side="West";
-											class Entities
-											{
-												items=10;
-												class Item0
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={339.58557,129.10011,9620.3516};
-														angles[]={6.2825074,4.702775,6.2738824};
-													};
-													side="West";
-													flags=7;
-													class Attributes
-													{
-														description="Командир @95 ОДШБР";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209408;
-													type="B_Survivor_F";
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item1
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={342.147,129.10808,9621.1699};
-														angles[]={6.2825074,4.6725273,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Пулемётчик";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209409;
-													type="B_Survivor_F";
-													atlOffset=0.0093994141;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item2
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={342.04636,129.10948,9620.3936};
-														angles[]={6.2825074,4.6724825,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Гранатомётчик";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209410;
-													type="B_Survivor_F";
-													atlOffset=0.0094451904;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item3
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={341.91092,129.11104,9619.5293};
-														angles[]={6.2825074,4.6720142,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Гранатомётчик";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209411;
-													type="B_Survivor_F";
-													atlOffset=0.009475708;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item4
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={341.30502,129.10774,9621.3594};
-														angles[]={6.2825074,4.6301699,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Стрелок ГП";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209412;
-													type="B_Survivor_F";
-													atlOffset=0.0093994141;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item5
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={341.23291,129.10933,9620.4355};
-														angles[]={6.2825074,4.6293821,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Стрелок ГП";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209413;
-													type="B_Survivor_F";
-													atlOffset=0.0093688965;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item6
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={340.5325,129.10368,9621.3447};
-														angles[]={6.2825074,4.6301079,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Стрелок";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209414;
-													type="B_Survivor_F";
-													atlOffset=0.0053100586;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=2;
-													};
-												};
-												class Item7
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={340.54105,129.10533,9620.4561};
-														angles[]={6.2825074,4.6293879,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Медик";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209415;
-													type="B_Survivor_F";
-													atlOffset=0.0054016113;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="ace_isMedic";
-															expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=2;
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute2
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=3;
-													};
-												};
-												class Item8
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={341.20944,129.11061,9619.6445};
-														angles[]={6.2825074,4.6290293,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Экипаж БТ";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209416;
-													type="B_Survivor_F";
-													atlOffset=0.0092468262;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="ace_isEngineer";
-															expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=2;
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute2
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=3;
-													};
-												};
-												class Item9
-												{
-													dataType="Object";
-													class PositionInfo
-													{
-														position[]={340.62268,129.10738,9619.5869};
-														angles[]={6.2825074,4.6293755,6.2738824};
-													};
-													side="West";
-													flags=5;
-													class Attributes
-													{
-														description="Экипаж БТ";
-														isPlayable=1;
-														class Inventory
-														{
-															map="ItemMap";
-															gps="ItemGPS";
-														};
-													};
-													id=209417;
-													type="B_Survivor_F";
-													atlOffset=0.0059204102;
-													class CustomAttributes
-													{
-														class Attribute0
-														{
-															property="ace_isEngineer";
-															expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=2;
-																};
-															};
-														};
-														class Attribute1
-														{
-															property="speaker";
-															expression="_this setspeaker _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="STRING";
-																	value="Male04ENG";
-																};
-															};
-														};
-														class Attribute2
-														{
-															property="pitch";
-															expression="_this setpitch _value;";
-															class Value
-															{
-																class data
-																{
-																	singleType="SCALAR";
-																	value=0.99000001;
-																};
-															};
-														};
-														nAttributes=3;
-													};
-												};
-											};
-											class Attributes
-											{
-												name="odshbr95";
-												init="this setVariable [""regArs"", odshbr95_ars, true];" \n "this setVariable [""regSpawner"", odshbr95_spawner, true];";
-											};
-											id=209407;
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="groupID";
-													expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="95 ОДШБР";
-														};
-													};
-												};
-												nAttributes=1;
-											};
-										};
-										class Item1
 										{
 											dataType="Group";
 											side="West";
@@ -31819,7 +31224,7 @@ class Mission
 												nAttributes=1;
 											};
 										};
-										class Item2
+										class Item1
 										{
 											dataType="Group";
 											side="West";
@@ -32766,7 +32171,7 @@ class Mission
 												nAttributes=1;
 											};
 										};
-										class Item3
+										class Item2
 										{
 											dataType="Group";
 											side="West";
@@ -33652,7 +33057,7 @@ class Mission
 												nAttributes=1;
 											};
 										};
-										class Item4
+										class Item3
 										{
 											dataType="Group";
 											side="West";
@@ -34780,7 +34185,7 @@ class Mission
 												nAttributes=1;
 											};
 										};
-										class Item5
+										class Item4
 										{
 											dataType="Group";
 											side="West";
@@ -35111,19 +34516,19 @@ class Mission
 										};
 									};
 									id=341;
-									atlOffset=-0.030273438;
+									atlOffset=-0.10357666;
 								};
 							};
 							id=340;
-							atlOffset=-0.030273438;
+							atlOffset=-0.10357666;
 						};
 					};
 					id=339;
-					atlOffset=-0.030273438;
+					atlOffset=-0.10357666;
 				};
 			};
 			id=338;
-			atlOffset=-0.030273438;
+			atlOffset=-0.10357666;
 		};
 		class Item2
 		{
@@ -38244,11 +37649,12 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={331.35782,128.85876,9619.7305};
+				position[]={331.358,128.85899,9619.7305};
 				angles[]={6.2746859,2.7310371,0.021261672};
 			};
-			title="95 ОДШБР";
+			title="Пусто ";
 			id=166607;
+			atlOffset=0.00022888184;
 		};
 		class Item15
 		{
@@ -59254,6 +58660,38 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item369
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={387.56238,128.60965,9614.4668};
+				angles[]={6.2673864,0,6.2502017};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=283344;
+			type="tbd_mt12";
+			atlOffset=-1.5258789e-05;
+		};
+		class Item370
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={424.55484,129.87242,9610.0566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=283345;
+			type="RUS_VDV_east_zu232";
 		};
 	};
 };

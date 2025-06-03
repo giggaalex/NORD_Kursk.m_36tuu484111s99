@@ -8,16 +8,13 @@ class common_rf_spawner_class //общий рф
         displayName = "Общий запрос техники";
         vehicles[] =
         {
-			{"RUS_MSV_South_kamaz4350",9,"true"},
-			{"RUS_MSV_South_kamaz63501at",1,"true"},
-			{"VTN_KAMAZ5350_379_ZU23_EMR",1,"true"},
+			{"RUS_MSV_South_kamaz4350",5,"true"},
 			{"VTN_KAMAZ5350_REAMMO_EMR",2,"true"},
 			{"VTN_KAMAZ5350_FUEL_EMR",1,"true"},
-			{"VTN_KAMAZ5350_UB2_REPAIR_EMR",1,"true"},
-			{"tbd_mt12",1,"true"},
-            {"rhs_D30_msv",2,"true"},
-			{"RUS_VKS_south_mi8amtsh_Unrmed",2,"true"},
-			{"nord_mtlb_rus",10,"true"},
+			{"LOP_SYR_KAMAZ_Repair",1,"true"},
+			{"nord_mtlb_rus",2,"true"},
+            {"RHS_ZU23_VMF",1,"true"},
+            {"tbd_mt12",1,"true"},
 		};
         spawnPoints[] =
         {
@@ -89,29 +86,26 @@ class logistic_rf_spawner_class //ящики рф
 
 // -------------- ВС РФ -----------------------
 
-class obrmp810_spawner_class //810 обрмп
+class obrmp810_spawner_class //810 ОБрМП
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrmp810_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrmp810_spawner)";
     
     class obrmp810_spawner_class
-	{
+    {
         displayName = "Запрос техники 810 обрмп";
         vehicles[] =
-        {    
-			{"rhs_bmp2_vmf",1,"true"},
-            {"O_T80BVM_M_Z",1,"true"},
-            {"rhs_tigr_msv",2,"true"},
-            {"MMM_KamAZ4386",1,"true"},
-            {"NORD_Tigr_M_233114_GREEN_KORD_RU",2,"true"},
-            {"UAZ_06_transport_F",1,"true"},
-            {"RUS_GRU_east_kamaz63968",2,"true"},
-            {"RUS_MP_south_btr80",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"obrmp810_spawnplace"}}
+            {"nord_BMP_2M_north",1,"true"},           // БМП-2M
+            {"nord_UAZ_03_transport_north",1,"true"},   // УАЗ Патриот
+            {"nord_tundra_rus_north",1,"true"},         // Toyota Tundra
+            {"nord_uaz452b_north",1,"true"},            // Буханка
+            {"MRZR_rus",1,"true"},                     // Багги MRZR
+            {"UAZ_GunMG_Oper",1,"true"},               // Патриот КОРД
+            {"UAZ_PO_AGS_Oper",1,"true"},              // Патриот АГС
+            {"nord_tigr_sts_north",1,"true"},           // Тигр АГС
+            {"RUS_MSV_South_btr82a",1,"true"}          // БТР-82А
         };
-        
+        spawnPoints[] = {{"1",{"obrmp810_spawnplace"}}};
     };
 };
 
@@ -133,79 +127,66 @@ class obrspn24_spawner_class //24 ОБрСпН (Пусто)
     };
 };
 
-class kna_spawner_class //КНА
+class kna_spawner_class //КНА (КНДР)
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == kna_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == kna_spawner)";
     
     class kna_spawner_class
-	{
+    {
         displayName = "Запрос техники КНА";
         vehicles[] =
-        {    
-			{"bs_BMP_2M",1,"true"},
-            {"RUS_MSV_West_btr82a",2,"true"},
-            {"rhs_tigr_msv",2,"true"},
-            {"NORD_Tigr_M_233114_GREEN_KORD_RU",1,"true"},
-            {"UAZ_06_transport_F",2,"true"},
-			{"rhs_tigr_sts_vmf",1,"true"},
-			{"NORD_BRDM2_RU",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"kna_spawnplace"}}
+            {"nord_UAZ_03_transport_north",1,"true"},   // УАЗ Патриот
+            {"nord_tundra_rus_north",1,"true"},         // Toyota Tundra
+            {"landcruiser_rus_green",1,"true"},         // Land Cruiser
+            {"nord_uaz452b_north",1,"true"},            // Буханка
+            {"MRZR_rus",1,"true"},                     // Багги MRZR
+            {"nord_tigr_sts_north",1,"true"},           // Тигр АГС
+            {"RUS_MSV_South_btr82a",1,"true"}          // БТР-82А
         };
-        
+        spawnPoints[] = {{"1",{"kna_spawnplace"}}};
     };
 };
 
-class praga_spawner_class //РШБ Прага
+class praga_spawner_class //РШБ "Прага"
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == praga_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == praga_spawner)";
     
     class praga_spawner_class
-	{
+    {
         displayName = "Запрос техники РШБ Прага";
         vehicles[] =
-        {    
-            {"RUS_MP_east_bmp3m",2,"true"},
-            {"RUS_MSV_West_btr82a",2,"true"},
-            {"rhs_tigr_msv",1,"true"},
-            {"NORD_BRDM2_RU",1,"true"},
-            {"UAZ_06_transport_F",2,"true"},
-            {"rhs_tigr_sts_vmf",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"praga_spawnplace"}}
+            {"nord_UAZ_03_transport_north",1,"true"},   // УАЗ Патриот
+            {"nord_tundra_rus_north",1,"true"},         // Toyota Tundra
+            {"landcruiser_rus_green",2,"true"},         // Land Cruiser
+            {"nord_uaz452b_north",2,"true"},            // Буханка
+            {"MRZR_rus",2,"true"},                     // Багги MRZR
+            {"UAZ_GunMG_Oper",1,"true"},               // Патриот КОРД
+            {"UAZ_PO_AGS_Oper",1,"true"},              // Патриот АГС
+            {"nord_tigr_sts_north",1,"true"}           // Тигр АГС
         };
-        
+        spawnPoints[] = {{"1",{"praga_spawnplace"}}};
     };
 };
 
 class dshp104_spawner_class //104 ДШП
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == dshp104_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == dshp104_spawner)";
     
     class dshp104_spawner_class
-	{
+    {
         displayName = "Запрос техники 104 ДШП";
         vehicles[] =
-        {    
-            {"rhs_bmp1p_vv",1,"true"},
-            {"RUS_MSV_West_btr82a",2,"true"},
-            {"rhs_tigr_msv",1,"true"},
-            {"MMM_KamAZ4386",1,"true"},
-            {"NORD_BRDM2_RU",1,"true"},
-            {"NORD_Tigr_M_233114_GREEN_KORD_RU",1,"true"},
-            {"RUS_GRU_east_kamaz63968",1,"true"},
-            {"RUS_MP_south_btr80",2,"true"},
-			{"NORD_BRDM2_RU",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"dshp104_spawnplace"}}
+            {"nord_UAZ_03_transport_north",1,"true"},   // УАЗ Патриот
+            {"nord_tundra_rus_north",1,"true"},         // Toyota Tundra
+            {"nord_uaz452b_north",2,"true"},            // Буханка
+            {"UAZ_GunMG_Oper",2,"true"},               // Патриот КОРД
+            {"UAZ_PO_AGS_Oper",1,"true"},              // Патриот АГС
+            {"RUS_MSV_South_btr82a",1,"true"}          // БТР-82А
         };
-        
+        spawnPoints[] = {{"1",{"dshp104_spawnplace"}}};
     };
 };
 
@@ -228,57 +209,40 @@ class pdp51_spawner_class //51 ПДП (Пусто)
     };
 };
 
-class obrmp155_spawner_class // 155 ОБРМП
+class obrmp155_spawner_class //155 ОБрМП
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrmp155_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrmp155_spawner)";
     
     class obrmp155_spawner_class
-	{
-        displayName = "Запрос техники  155 ОБРМП";
+    {
+        displayName = "Запрос техники 155 ОБрМП";
         vehicles[] =
-        {    
-            {"RUS_MSV_West_t90m",1,"true"},
-            {"RUS_VDV_east_bmd4m",1,"true"},
-            {"RUS_MSV_West_btr82a",1,"true"},
-            {"MMM_KamAZ4386",2,"true"},
-            {"rhs_tigr_sts_vmf",1,"true"},
-            {"RUS_GRU_east_kamaz63968",1,"true"},
-            {"bs_tigr_atgm",1,"true"},
-			{"RUS_MP_south_btr80",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"obrmp155_spawnplace"}}
+            {"RUS_MSV_t90m",1,"true"},                // T-90M Прорыв
+            {"nord_UAZ_03_transport_north",1,"true"},   // УАЗ Патриот
+            {"landcruiser_rus_green",1,"true"},         // Land Cruiser
+            {"UAZ_GunMG_Oper",2,"true"},               // Патриот КОРД
+            {"RUS_MSV_South_btr82a",1,"true"}          // БТР-82А
         };
-        
+        spawnPoints[] = {{"1",{"obrmp155_spawnplace"}}};
     };
 };
 
-class aid_axmat_spawner_class //аид ахмат
+
+class aid_axmat_spawner_class //группа Аида СпН "Ахмат"
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == aid_axmat_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == aid_axmat_spawner)";
     
     class aid_axmat_spawner_class
-	{
+    {
         displayName = "Запрос техники аид ахмат";
         vehicles[] =
-        {    
-			{"RUS_MSV_South_t72b3m",1,"true"}, 
-			{"RUS_VDV_east_bmd4m",1,"true"},
-			{"RUS_MSV_West_btr82a",1,"true"},
-			{"rhs_tigr_msv",2,"true"},
-			{"bs_tigr_atgm",1,"true"},
-			{"UAZ_06_transport_F",2,"true"},
-			{"RUS_GRU_east_kamaz63968",1,"true"},
-		};
-        spawnPoints[] =
         {
-            {"1",{"aid_axmat_spawnplace"}}
+            {"MRZR_rus",2,"true"}                     // Багги MRZR
         };
-        
+        spawnPoints[] = {{"1",{"aid_axmat_spawnplace"}}};
     };
 };
-
 // -------------- ЯЩИК ВСУ -----------------------
 
 class common_vsu_spawner_class //общий всу
@@ -290,15 +254,13 @@ class common_vsu_spawner_class //общий всу
         displayName = "Общий запрос техники";
         vehicles[] =
         {
-			{"NORD_KRAZ_TENT",10,"true"},
-			{"b_afougf_yt_Ural_Zu23",1,"true"},
+			{"NORD_KRAZ_TENT",5,"true"},
 			{"NORD_KRAZ_6322_ammo",2,"true"},
 			{"NORD_KRAZ_FUEL",1,"true"},
 			{"NORD_KRAZ_6322_repair	",1,"true"},
-			{"tbd_mt12",1,"true"},
-            {"rhs_D30_msv",2,"true"},
-			{"b_afougf_Mi8MTV3_Cargo",2,"true"},
-			{"nord_mtlb_ukr",10,"true"},
+			{"nord_mtlb_ukr",2,"true"},
+             {"RHS_ZU23_VMF",1,"true"},
+            {"tbd_mt12",1,"true"},
 		};
         spawnPoints[] =
         {
@@ -387,81 +349,69 @@ class logistic_vsu_spawner_class //ящики всу
 
 // -------------- ВСУ -----------------------
 
-class magura_ombr47_spawner_class //47 ОМБР
+class magura_ombr47_spawner_class //47 ОМБр
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == magura_ombr47_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == magura_ombr47_spawner)";
     
     class magura_ombr47_spawner_class
-	{
+    {
         displayName = "Запрос техники 47 ОМБР";
         vehicles[] =
         {
-		{"nord_RHS_M2A2_wd",1,"true"},
-		{"nord_b_afougf_bmp2",1,"true"},
-		{"b_afougf_yt_kozak5_unarmed_F",2,"true"},
-		{"nord_b_afougf_m1151_base",1,"true"},
-		{"nord_B_MaxxPro_M2_US_W",1,"true"},
-		{"nord_b_afougf_m998_2dr",1,"true"},
-		{"nord_B_MaxxPro_MK19_US_W",1,"true"},
-		{"nord_b_afougf_uaf_fiona",1,"true"},
+            {"b_afougf_yt_uaf_t64bm2",1,"true"},      // T-64БМ2 Булат
+            {"nord_b_afougf_m998_2dr",1,"true"},      // M998 2ДВ
+            {"tundra_ukr_krest",2,"true"},            // Тундра
+            {"landcruiser_ukr_krest",1,"true"},       // Land Cruiser
+            {"nord_uaz452b_zsu",1,"true"},            // Буханка
+            {"rhsgref_hidf_m1025_m2",1,"true"},       // Хамви М2
+            {"rhsusf_m1240a1_mk19_usarmy_wd",1,"true"}, // M1240 МК19
+            {"stryker_krest",2,"true"}                // Stryker М1126
         };
-        spawnPoints[] =
-        {
-            {"1",{"magura_ombr47_spawnplace"}}
-        };
-        
+        spawnPoints[] = {{"1",{"magura_ombr47_spawnplace"}}};
     };
 };
 
 class opspn8_spawner_class //8 ОПСпН
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == opspn8_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == opspn8_spawner)";
     
     class opspn8_spawner_class
-	{
+    {
         displayName = "Запрос техники 8 ОПСпН";
         vehicles[] =
         {
-		{"nord_FA_UAF_BTR4",1,"true"},
-		{"nord_rhsusf_stryker_m1132_m2_wd",1,"true"},
-		{"b_afougf_yt_kozak5_unarmed_F",1,"true"},
-		{"nord_b_afougf_m998_2dr",1,"true"},
-		{"nord_b_afougf_m1151_base",1,"true"},
-		{"nord_B_MaxxPro_M2_US_W",1,"true"},
-		{"nord_B_MaxxPro_MK19_US_W",1,"true"},
-		{"nord_b_afougf_uaf_fiona",1,"true"},
-		{"nord_rhsusf_m966_w",1,"true"},
+            {"tahoe_ukr_krest",1,"true"},            // Chevrolet Tahoe
+            {"tundra_ukr_krest",1,"true"},            // Тундра
+            {"landcruiser_ukr_krest",1,"true"},       // Land Cruiser
+            {"nord_uaz452b_zsu",1,"true"},            // Буханка
+            {"MRZR_ukr",2,"true"},                   // Багги MRZR
+            {"rhsgref_hidf_m1025_m2",1,"true"},       // Хамви М2
+            {"nord_rhsusf_m1043_w_mk19",1,"true"},    // Хамви МК19
+            {"rhsusf_m1240a1_mk19_usarmy_wd",1,"true"} // M1240 МК19
         };
-        spawnPoints[] =
-        {
-            {"1",{"opspn8_spawnplace"}}
-        };
-        
+        spawnPoints[] = {{"1",{"opspn8_spawnplace"}}};
     };
 };
 
 class mcso73_spawner_class //73 МЦСО
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcso73_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcso73_spawner)";
     
     class mcso73_spawner_class
-	{
+    {
         displayName = "Запрос техники 73 МЦСО";
         vehicles[] =
         {
-		{"nord_rhsusf_stryker_m1132_m2_wd",1,"true"},
-		{"b_afougf_yt_kozak5_unarmed_F",2,"true"},
-		{"nord_B_MaxxPro_M2_US_W",1,"true"},
-		{"nord_b_afougf_m998_2dr",2,"true"},
-		{"nord_B_MaxxPro_MK19_US_W",1,"true"},
-		{"nord_b_afougf_uaf_fiona",1,"true"},
-		{"nord_rhsusf_m966_w",1,"true"},
+            {"tahoe_ukr_krest",1,"true"},            // Chevrolet Tahoe
+            {"tundra_ukr_krest",1,"true"},            // Тундра
+            {"landcruiser_ukr_krest",1,"true"},       // Land Cruiser
+            {"nord_uaz452b_zsu",1,"true"},            // Буханка
+            {"MRZR_ukr",2,"true"},                   // Багги MRZR
+            {"rhsgref_hidf_m1025_m2",1,"true"},       // Хамви М2
+            {"nord_rhsusf_m1043_w_mk19",1,"true"},    // Хамви МК19
+            {"rhsusf_m1240a1_mk19_usarmy_wd",1,"true"} // M1240 МК19
         };
-        spawnPoints[] =
-        {
-            {"1",{"mcso73_spawnplace"}}
-        };
-        
+        spawnPoints[] = {{"1",{"mcso73_spawnplace"}}};
     };
 };
 
@@ -483,56 +433,43 @@ class odshbr95_spawner_class //95 ОДШБР
     };
 };
 
-class odshbr82_spawner_class //82 одшбр
+class odshbr82_spawner_class //82 ОДШБр
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == odshbr82_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == odshbr82_spawner)";
     
     class odshbr82_spawner_class
-	{
-        displayName = "Запрос техники 82 одшбр";
+    {
+        displayName = "Запрос техники 82 ОДШБр";
         vehicles[] =
         {
-		{"nord_leopard2a4_UA",1,"true"},
-		{"stefan_t72be_tv",1,"true"},
-		{"b_afougf_yt_uaf_t64bm2",1,"true"},
-		{"nord_strf90c",1,"true"},
-		{"nord_rhsusf_stryker_m1132_m2_wd",2,"true"},
-		{"b_afougf_yt_kozak5_unarmed_F",3,"true"},
-		{"nord_b_afougf_m1151_base",1,"true"},
-		{"nord_B_MaxxPro_M2_US_W",1,"true"},
-		{"nord_b_afougf_m998_2dr",2,"true"},
-		{"m113_krest",1,"true"},
+            {"nord_RHS_M2A2_wd",1,"true"},            // M2A2 Bradley
+            {"nord_b_afougf_m998_2dr",1,"true"},      // M998 2ДВ
+            {"landcruiser_ukr_krest",1,"true"},       // Land Cruiser
+            {"nord_uaz452b_zsu",1,"true"},            // Буханка
+            {"rhsgref_hidf_m1025_m2",1,"true"},       // Хамви М2
+            {"nord_rhsusf_m1043_w_mk19",1,"true"},    // Хамви МК19
+            {"stryker_krest",2,"true"}                // Stryker М1126
         };
-        spawnPoints[] =
-        {
-            {"1",{"odshbr82_spawnplace"}}
-        };
-        
+        spawnPoints[] = {{"1",{"odshbr82_spawnplace"}}};
     };
 };
 
-class opr6_spawner_class //6 ОПР ( пусто ) 
+class opr6_spawner_class //6 ОПР
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == opr6_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == opr6_spawner)";
     
     class opr6_spawner_class
-	{
+    {
         displayName = "Запрос техники 6 ОПР";
         vehicles[] =
         {
-        {"nord_FA_UAF_BTR4",1,"true"},
-		{"nord_rhsusf_stryker_m1132_m2_wd",2,"true"},
-		{"b_afougf_yt_kozak5_unarmed_F",2,"true"},
-		{"nord_b_afougf_m1151_base",1,"true"},
-		{"nord_b_afougf_m998_2dr",1,"true"},
-		{"nord_b_afougf_uaf_fiona",1,"true"},
-		{"m113_krest",2,"true"},
+            {"tahoe_ukr_krest",1,"true"},            // Chevrolet Tahoe
+            {"landcruiser_ukr_krest",1,"true"},       // Land Cruiser
+            {"nord_uaz452b_zsu",1,"true"},            // Буханка
+            {"MRZR_ukr",2,"true"},                   // Багги MRZR
+            {"rhsgref_hidf_m1025_m2",1,"true"}        // Хамви М2
         };
-        spawnPoints[] =
-        {
-            {"1",{"opr6_spawnplace"}}
-        };
-        
+        spawnPoints[] = {{"1",{"opr6_spawnplace"}}};
     };
 };
 
