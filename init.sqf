@@ -3,7 +3,8 @@
 [] execVM "scripts\zeus\opened_eh.sqf";
 [] execVM "ROS_hitreaction\scripts\ROS_HitReaction.sqf";
 
-
+CHVD_terrain = 3.125;
+CHVD_allowNoGrass = false;
 
 //Светлая ночь
 CHBN_adjustBrightness = 1;
