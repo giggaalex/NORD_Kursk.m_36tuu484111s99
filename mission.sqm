@@ -31111,7 +31111,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=600;
+									value=900;
 								};
 							};
 						};
@@ -31405,7 +31405,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=600;
+									value=900;
 								};
 							};
 						};
@@ -31564,7 +31564,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=0;
+									value=1;
 								};
 							};
 						};
