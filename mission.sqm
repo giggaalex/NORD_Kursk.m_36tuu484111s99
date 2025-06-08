@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=155902;
+		nextID=155952;
 	};
 	class Camera
 	{
-		pos[]={7000.2661,140.10284,2663.3481};
-		dir[]={0.045051802,-0.33476976,0.94122279};
-		up[]={0.016005497,0.94229949,0.33438706};
-		aside[]={0.99885672,1.6443664e-09,-0.047810465};
+		pos[]={9058.1582,191.93422,793.42108};
+		dir[]={-0.036566287,-0.69569451,0.71740657};
+		up[]={-0.035413649,0.71833766,0.69479257};
+		aside[]={0.99870348,0,0.050904021};
 	};
 };
 binarizationWanted=0;
@@ -481,7 +481,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -533,7 +533,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -30904,7 +30904,7 @@ class Mission
 			type="";
 			a=22.849001;
 			b=62.963001;
-			angle=336.99194;
+			angle=336.99191;
 			id=283358;
 			atlOffset=-0.17097473;
 			class CustomAttributes
@@ -31809,13 +31809,14 @@ class Mission
 				angles[]={6.0751729,5.9221439,6.1831875};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=283406;
 			type="Land_rhs_gerb_ussr";
-			atlOffset=3.7773056;
+			atlOffset=0.02117157;
 		};
 		class Item25
 		{
@@ -54163,7 +54164,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=700.08795;
-			angle=251.81042;
+			angle=251.81038;
 			id=285828;
 			atlOffset=2.9466934;
 			class CustomAttributes
@@ -54221,9 +54222,9 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=1298.723;
-			angle=170.37956;
+			angle=170.37952;
 			id=285830;
-			atlOffset=8.3805771;
+			atlOffset=8.3805695;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54279,7 +54280,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=761.41772;
-			angle=79.627289;
+			angle=79.627274;
 			id=285831;
 			atlOffset=2.8995209;
 			class CustomAttributes
@@ -54395,7 +54396,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=641.08167;
-			angle=121.03828;
+			angle=121.03827;
 			id=285833;
 			atlOffset=4.0557327;
 			class CustomAttributes
@@ -54569,7 +54570,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=529.6178;
-			angle=45.891701;
+			angle=45.891685;
 			id=285836;
 			atlOffset=0.83537292;
 			class CustomAttributes
