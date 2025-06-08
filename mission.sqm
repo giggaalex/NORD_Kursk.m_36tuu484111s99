@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=155952;
+		nextID=156002;
 	};
 	class Camera
 	{
-		pos[]={9058.1582,191.93422,793.42108};
-		dir[]={-0.036566287,-0.69569451,0.71740657};
-		up[]={-0.035413649,0.71833766,0.69479257};
-		aside[]={0.99870348,0,0.050904021};
+		pos[]={9038.7363,157.438,843.50525};
+		dir[]={-0.19433382,-0.64363927,0.74024755};
+		up[]={-0.16343357,0.76532757,0.62254548};
+		aside[]={0.96722728,-7.9569872e-08,0.2539216};
 	};
 };
 binarizationWanted=0;
@@ -481,7 +481,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -520,7 +520,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -533,7 +533,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -31137,7 +31137,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -31431,7 +31431,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -31616,7 +31616,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -54570,7 +54570,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=529.6178;
-			angle=45.891685;
+			angle=45.891682;
 			id=285836;
 			atlOffset=0.83537292;
 			class CustomAttributes
