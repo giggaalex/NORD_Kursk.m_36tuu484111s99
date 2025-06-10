@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=156488;
+		nextID=156628;
 	};
 	class Camera
 	{
-		pos[]={59.363712,128.86258,10132.781};
-		dir[]={0.8407976,-0.47667328,-0.25661322};
-		up[]={0.45591432,0.87907857,-0.13914624};
-		aside[]={-0.29191169,2.3911707e-07,-0.95645022};
+		pos[]={283.66849,163.36237,9619.5127};
+		dir[]={0.56409258,-0.75263274,0.33989793};
+		up[]={0.64467877,0.65838301,0.38845706};
+		aside[]={0.51614708,-2.1012966e-07,-0.85659701};
 	};
 };
 binarizationWanted=0;
@@ -464,7 +464,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -490,7 +490,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -503,7 +503,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -516,7 +516,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -30190,6 +30190,7 @@ class Mission
 			};
 			id=1066;
 			type="ACE_ModuleNameTags";
+			atlOffset=7.6293945e-06;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30346,7 +30347,7 @@ class Mission
 					};
 					id=209635;
 					type="C_man_1";
-					atlOffset=0.28217316;
+					atlOffset=0.28218079;
 				};
 				class Item2
 				{
@@ -30365,7 +30366,7 @@ class Mission
 					};
 					id=209636;
 					type="C_man_1";
-					atlOffset=0.26870728;
+					atlOffset=0.26869965;
 				};
 				class Item3
 				{
@@ -35168,6 +35169,7 @@ class Mission
 			};
 			id=284360;
 			type="ACE_ModuleNameTags";
+			atlOffset=7.6293945e-06;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36325,19 +36327,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9022.3115,136.41772,901.92926};
+						position[]={9022.3115,136.41794,901.92902};
 						angles[]={0,0.39664352,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="if (isServer) then { " \n "this addItemCargoGlobal " \n "[""MineDetector"", 5];" \n " this addItemCargoGlobal [""rhsusf_bino_lrf_Vector21"", 3];  " \n "this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Kornet_Gun_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Kornet_Tripod_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1];  " \n "this addItemCargoGlobal " \n "[""MMM_Weap_RPOA"", 5];  " \n "this addItemCargoGlobal " \n "[""nord_armst_gm94"", 1]; " \n "this addItemCargoGlobal " \n "[""MMM_Acc_IT_1TWS_615A"", 3];  " \n "this addItemCargoGlobal " \n "[""Item_Mavic3T"", 1];  " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AT_Bag"", 3];  " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AP_Bag"", 3];  " \n "};";
 						name="obrspn24_ars";
 					};
 					id=284392;
 					type="rhs_spec_weapons_crate";
-					atlOffset=-0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36540,7 +36540,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="if (isServer) then { " \n "this addItemCargoGlobal " \n "[""MineDetector"", 5];" \n " this addItemCargoGlobal [""rhsusf_bino_lrf_Vector21"", 3];" \n "this addBackpackCargoGlobal" \n "[""ghillie_down"", 5];" \n "this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Kornet_Gun_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Kornet_Tripod_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1];  " \n "this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1];  " \n "this addItemCargoGlobal " \n "[""MMM_Weap_RPOA"", 5];  " \n "this addItemCargoGlobal " \n "[""nord_armst_gm94"", 1]; " \n "this addItemCargoGlobal " \n "[""MMM_Acc_IT_1TWS_615A"", 3];  " \n "this addItemCargoGlobal " \n "[""Item_Mavic3T"", 1];  " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AT_Bag"", 3];  " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AP_Bag"", 3];  " \n "};";
 						name="aid_axmat_ars";
 					};
 					id=284397;
@@ -36876,19 +36875,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9020.9736,136.90437,847.59827};
-						angles[]={6.2197595,4.3804622,0.049754739};
+						position[]={9020.9736,136.90462,847.59857};
+						angles[]={6.2197599,4.3804622,0.04975934};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="if (isServer) then { " \n " this addItemCargoGlobal " \n "[""MineDetector"", 5];" \n " this addItemCargoGlobal [""rhsusf_bino_lrf_Vector21"", 3]; " \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Kornet_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Kornet_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1]; " \n " this addItemCargoGlobal  " \n "[""MMM_Weap_RPOA"", 5]; " \n " this addItemCargoGlobal  " \n "[""Item_Mavic"", 1]; " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AT_Bag"", 3]; " \n "this addBackpackCargoGlobal " \n "[""O_Crocus_AP_Bag"", 3]; " \n "};";
 						name="pdp51_ars";
 						dynamicSimulation=1;
 					};
 					id=284405;
 					type="rhs_spec_weapons_crate";
+					atlOffset=0.00022888184;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36997,7 +36996,7 @@ class Mission
 				};
 			};
 			id=284364;
-			atlOffset=-0.097366333;
+			atlOffset=-0.097305298;
 		};
 		class Item20
 		{
@@ -38705,7 +38704,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={378.01764,128.76607,9673.8555};
-						angles[]={6.1397557,6.1597266,0.019681627};
+						angles[]={0.032355342,6.1597266,0.0052134232};
 					};
 					side="Empty";
 					flags=5;
@@ -38739,7 +38738,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={367.55673,128.79901,9672.625};
-						angles[]={6.0095387,6.1594772,0.018365851};
+						angles[]={0.032355342,6.1594772,6.2822719};
 					};
 					side="Empty";
 					flags=5;
@@ -38943,7 +38942,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={371.02188,128.73611,9596.4277};
-						angles[]={0.0024522161,1.7215015,6.2803478};
+						angles[]={6.2508302,1.7215015,6.2810855};
 					};
 					side="Empty";
 					flags=5;
@@ -38977,7 +38976,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={372.64905,128.98866,9606.835};
-						angles[]={0,1.7215085,0};
+						angles[]={6.2774391,1.7215085,6.2826972};
 					};
 					side="Empty";
 					flags=5;
@@ -39011,7 +39010,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={374.24759,129,9617.1846};
-						angles[]={0,1.7215085,0};
+						angles[]={-0,1.7215085,0};
 					};
 					side="Empty";
 					flags=5;
@@ -39045,7 +39044,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={375.87268,128.98096,9627.5898};
-						angles[]={6.283092,1.7215086,6.2818975};
+						angles[]={0.0014648439,1.7215086,6.2668042};
 					};
 					side="Empty";
 					flags=5;
@@ -39079,7 +39078,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={377.49561,128.98369,9637.9775};
-						angles[]={0.035688844,1.7272744,0.20558695};
+						angles[]={-0,1.7272744,6.275496};
 					};
 					side="Empty";
 					flags=5;
@@ -39113,7 +39112,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={379.12079,129,9648.3848};
-						angles[]={0.039194915,1.7298162,0.29816437};
+						angles[]={-0,1.7298162,0};
 					};
 					side="Empty";
 					flags=5;
@@ -39147,7 +39146,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={380.71924,129,9658.7334};
-						angles[]={6.2526169,1.7063974,0.35561842};
+						angles[]={-0,1.7063974,0};
 					};
 					side="Empty";
 					flags=5;
@@ -39181,7 +39180,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={382.34442,128.9185,9669.1387};
-						angles[]={6.0068388,1.6776694,0.16234131};
+						angles[]={0.027394697,1.6776694,0.0010918301};
 					};
 					side="Empty";
 					flags=5;
@@ -39488,7 +39487,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={362.11978,127.56055,9560.3027};
-						angles[]={0.019975938,6.2633648,6.2521114};
+						angles[]={6.2508302,6.2633648,0.0009134906};
 					};
 					side="Empty";
 					flags=5;
@@ -39794,7 +39793,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={365.76987,127.72712,9565.3496};
-						angles[]={0.0037564433,1.7300497,6.2829123};
+						angles[]={6.2508283,1.7300497,0.0009134906};
 					};
 					side="Empty";
 					flags=5;
@@ -39828,7 +39827,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={367.45651,128.06319,9575.6865};
-						angles[]={0.0066416464,1.7300487,6.282702};
+						angles[]={6.2508302,1.7300487,0.0009134906};
 					};
 					side="Empty";
 					flags=5;
@@ -39862,7 +39861,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={369.17166,128.40102,9586.0771};
-						angles[]={6.2819262,1.7300612,6.2659025};
+						angles[]={6.2508264,1.7300612,0.0009134906};
 					};
 					side="Empty";
 					flags=5;
@@ -40277,7 +40276,7 @@ class Mission
 					};
 					id=284532;
 					type="C_man_1";
-					atlOffset=0.28217316;
+					atlOffset=0.28218079;
 				};
 				class Item2
 				{
@@ -40296,7 +40295,7 @@ class Mission
 					};
 					id=284533;
 					type="C_man_1";
-					atlOffset=0.26870728;
+					atlOffset=0.26869965;
 				};
 				class Item3
 				{
@@ -45367,27 +45366,27 @@ class Mission
 														};
 													};
 													id=285056;
-													atlOffset=-0.25169373;
+													atlOffset=-0.52708435;
 												};
 											};
 											id=285055;
-											atlOffset=-0.25169373;
+											atlOffset=-0.52708435;
 										};
 									};
 									id=285054;
-									atlOffset=-0.25169373;
+									atlOffset=-0.52708435;
 								};
 							};
 							id=285053;
-							atlOffset=-0.25169373;
+							atlOffset=-0.52708435;
 						};
 					};
 					id=285052;
-					atlOffset=-0.25169373;
+					atlOffset=-0.52708435;
 				};
 			};
 			id=285051;
-			atlOffset=-0.25169373;
+			atlOffset=-0.52708435;
 		};
 		class Item39
 		{
@@ -48965,19 +48964,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={345.25385,129.36426,9646.1738};
-				angles[]={0.015113218,1.5483096,0.017366838};
+				position[]={345.25391,129.36389,9646.1738};
+				angles[]={0.015114551,1.5483165,0.017366026};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { " \n " this addItemCargoGlobal [""MineDetector"", 5]; " \n " this addItemCargoGlobal [""rhsusf_bino_lrf_Vector21"", 3]; " \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AT_Bag"", 3]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AP_Bag"", 3]; " \n " this addItemCargoGlobal  " \n "[""Item_Mavic"", 1]; " \n "};";
 				name="obrmp36_ars";
 			};
 			id=285559;
 			type="rhs_spec_weapons_crate";
-			atlOffset=0.11036682;
+			atlOffset=0.11000061;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49114,18 +49112,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={347.56262,129.51683,9620.1855};
-				angles[]={0.0017605233,1.6051514,0};
+				position[]={347.56299,129.51723,9620.1855};
+				angles[]={0.0017627826,1.6051444,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { " \n " this addItemCargoGlobal [""MineDetector"", 5]; " \n " this addItemCargoGlobal [""rhsusf_bino_lrf_Vector21"", 3]; " \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AT_Bag"", 3]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AP_Bag"", 3]; " \n " this addItemCargoGlobal  " \n "[""Item_Mavic"", 1]; " \n "};";
 				name="odshbr95_ars";
 			};
 			id=285561;
 			type="rhs_spec_weapons_crate";
+			atlOffset=0.00039672852;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49188,18 +49186,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={347.13867,129.5434,9633.5625};
-				angles[]={0.0036702405,1.4196751,0.0048460579};
+				position[]={347.13898,129.54387,9633.5625};
+				angles[]={0.0036651914,1.4196683,0.0048520151};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { " \n " this addItemCargoGlobal [""MineDetector"", 5]; " \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""nord_stugna_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1]; " \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AT_Bag"", 3]; " \n " this addBackpackCargoGlobal  " \n "[""B_Crocus_AP_Bag"", 3]; " \n " this addItemCargoGlobal  " \n "[""Item_Mavic"", 1]; " \n "};";
 				name="ombr72_ars";
 			};
 			id=285562;
 			type="rhs_spec_weapons_crate";
+			atlOffset=0.00047302246;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50715,7 +50713,7 @@ class Mission
 			type="";
 			a=50;
 			b=560.8064;
-			angle=225.97423;
+			angle=225.97421;
 			id=286111;
 			atlOffset=8.6129074;
 		};
@@ -50741,7 +50739,7 @@ class Mission
 			type="";
 			a=50;
 			b=784.08215;
-			angle=57.014854;
+			angle=57.014851;
 			id=286115;
 			atlOffset=3.2322769;
 		};
@@ -50942,7 +50940,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=1127.6907;
-			angle=79.902443;
+			angle=79.902435;
 			id=286125;
 			atlOffset=4.0926208;
 			class CustomAttributes
@@ -51000,7 +50998,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=391.9115;
-			angle=1.6022652;
+			angle=1.6022651;
 			id=286126;
 			atlOffset=-2.4226608;
 			class CustomAttributes
@@ -51116,7 +51114,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=1098.045;
-			angle=75.192726;
+			angle=75.192719;
 			id=286128;
 			atlOffset=14.730179;
 			class CustomAttributes
@@ -52046,7 +52044,7 @@ class Mission
 			type="";
 			a=57.918034;
 			b=35.343941;
-			angle=322.88535;
+			angle=322.88531;
 			id=289297;
 			atlOffset=21.771271;
 			class CustomAttributes
